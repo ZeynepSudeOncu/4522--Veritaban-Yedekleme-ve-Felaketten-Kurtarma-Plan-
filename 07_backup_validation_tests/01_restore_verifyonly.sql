@@ -1,0 +1,17 @@
+USE master;
+GO
+
+RESTORE VERIFYONLY
+FROM DISK = 'C:\SQLBackups\AdventureWorksLT2022\Full\AdventureWorksLT2022_FULL.bak'
+WITH CHECKSUM;
+GO
+
+RESTORE VERIFYONLY
+FROM DISK = 'C:\SQLBackups\AdventureWorksLT2022\Differential\AdventureWorksLT2022_DIFF.bak'
+WITH CHECKSUM;
+GO
+
+RESTORE VERIFYONLY
+FROM DISK = 'C:\SQLBackups\AdventureWorksLT2022\Log\AdventureWorksLT2022_LOG_001.trn'
+WITH CHECKSUM;
+GO
