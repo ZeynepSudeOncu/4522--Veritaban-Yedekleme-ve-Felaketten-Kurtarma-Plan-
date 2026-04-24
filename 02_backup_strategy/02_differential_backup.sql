@@ -14,7 +14,7 @@ WITH
     DIFFERENTIAL,
     INIT,
     CHECKSUM,
-    COMPRESSION,
+    --COMPRESSION,
     STATS = 10,
     NAME = 'AdventureWorksLT2022 Differential Backup';
 GO

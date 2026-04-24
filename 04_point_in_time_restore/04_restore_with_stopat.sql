@@ -7,18 +7,30 @@ GO
 
 RESTORE DATABASE AdventureWorksLT2022
 FROM DISK = 'C:\SQLBackups\AdventureWorksLT2022\Full\AdventureWorksLT2022_FULL.bak'
-WITH NORECOVERY, REPLACE, STATS = 10;
+WITH 
+    NORECOVERY,
+    REPLACE,
+    STATS = 10;
 GO
 
 RESTORE DATABASE AdventureWorksLT2022
 FROM DISK = 'C:\SQLBackups\AdventureWorksLT2022\Differential\AdventureWorksLT2022_DIFF.bak'
-WITH NORECOVERY, STATS = 10;
+WITH 
+    NORECOVERY,
+    STATS = 10;
 GO
 
 RESTORE LOG AdventureWorksLT2022
 FROM DISK = 'C:\SQLBackups\AdventureWorksLT2022\Log\AdventureWorksLT2022_LOG_001.trn'
+WITH 
+    NORECOVERY,
+    STATS = 10;
+GO
+
+RESTORE LOG AdventureWorksLT2022
+FROM DISK = 'C:\SQLBackups\AdventureWorksLT2022\Log\AdventureWorksLT2022_TAIL_LOG.trn'
 WITH
-    STOPAT = '2026-04-20T14:30:00',
+    STOPAT = '2026-04-24 21:30:00',
     RECOVERY,
     STATS = 10;
 GO
@@ -33,6 +45,5 @@ GO
 SELECT * FROM dbo.BackupRecoveryTest;
 GO
 
-/*
-STOPAT değerini kendi güvenli zamanınıza göre değiştirin.
-*/
+
+

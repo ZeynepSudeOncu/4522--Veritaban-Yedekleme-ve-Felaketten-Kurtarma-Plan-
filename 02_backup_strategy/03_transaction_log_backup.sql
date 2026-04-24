@@ -13,7 +13,7 @@ TO DISK = 'C:\SQLBackups\AdventureWorksLT2022\Log\AdventureWorksLT2022_LOG_001.t
 WITH
     INIT,
     CHECKSUM,
-    COMPRESSION,
+   -- COMPRESSION,
     STATS = 10,
     NAME = 'AdventureWorksLT2022 Transaction Log Backup 001';
 GO

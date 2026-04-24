@@ -12,6 +12,5 @@ SELECT * FROM dbo.BackupRecoveryTest;
 GO
 
 /*
-Bu ekrandaki zamanı not alın.
 STOPAT için bu zamana yakın bir değer kullanılacaktır.
 */
