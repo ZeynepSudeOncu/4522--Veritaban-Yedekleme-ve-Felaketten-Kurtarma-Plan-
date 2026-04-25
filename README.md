@@ -1,1 +1,1 @@
-"# 4522--Veritaban-Yedekleme-ve-Felaketten-Kurtarma-Plan-" 
+Video Link: https://www.youtube.com/watch?v=-y6XSPO12dM
